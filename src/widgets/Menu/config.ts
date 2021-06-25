@@ -120,7 +120,7 @@ export const socials = [
     items: [
       {
         label: "Channel",
-        href: "https://t.me/goosedefi",
+        href: "https://t.me/poohswap",
       },
     ],
   },
