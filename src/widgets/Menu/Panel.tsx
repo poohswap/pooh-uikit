@@ -3,6 +3,7 @@ import styled from "styled-components";
 import PanelBody from "./PanelBody";
 import { SIDEBAR_WIDTH_REDUCED, SIDEBAR_WIDTH_FULL } from "./config";
 import { PanelProps, PushedProps } from "./types";
+import PanelFooter from "./PanelFooter";
 
 interface Props extends PanelProps, PushedProps {
   showMenu: boolean;
@@ -38,7 +39,7 @@ const Panel: React.FC<Props> = (props) => {
   return (
     <StyledPanel isPushed={isPushed} showMenu={showMenu}>
       <PanelBody {...props} />
-      {/* <PanelFooter {...props} /> */}
+      <PanelFooter {...props} />
     </StyledPanel>
   );
 };
