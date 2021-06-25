@@ -47,7 +47,6 @@ const PanelFooter: React.FC<Props> = ({
   isPushed,
   pushNav,
   cakePriceUsd,
-  priceLink,
 }) => {
   if (!isPushed) {
     return (
@@ -63,7 +62,7 @@ const PanelFooter: React.FC<Props> = ({
     <Container>
       <SocialEntry>
         {cakePriceUsd ? (
-          <PriceLink href={priceLink} target="_blank">
+          <PriceLink href="https://pancakeswap.info/token/0x72966d8c67846a2ae0c75f755b559856dcd45419" target="_blank">
             <PancakeRoundIcon width="24px" mr="8px" />
             <Text color="textSubtle" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
           </PriceLink>
